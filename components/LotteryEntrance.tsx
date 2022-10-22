@@ -88,9 +88,13 @@ const LotteryEntrance = () => {
         });
     };
     return (
-        <div className="h-72 bg-gradient-to-r from-purple-600 to-blue-600 flex justify-center p-5 mt-5">
+        <div className="h-72 bg-gradient-to-r from-purple-600 to-blue-600 flex justify-center p-8 mt-5 rounded">
             {raffleAddress ? (
                 <div className="flex flex-col items-center gap-2">
+                    <p className="text-red-300">
+                        NOTE: Lottery will Automatically pick winner after every
+                        30sec
+                    </p>
                     <p className="text-white text-2xl">
                         Raffle Ticket Price is :{" "}
                         <span className="pl-3 text-blue-400-400 text-3xl">
